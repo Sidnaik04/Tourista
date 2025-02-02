@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+  - custom css link
+-->
+    <link rel="stylesheet" href="./assests/style.css" />
+
+    <!-- 
+  - google font link
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <header>
+        <nav class="navbar" data-navbar style="background-color: #212121">
+          <div class="navbar-top">
+            <button
+              class="nav-close-btn"
+              aria-label="Close Menu"
+              data-nav-close-btn
+            >
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+
+            <li>
+              <a href="destination.html" class="navbar-link" data-nav-link
+                >destination</a
+              >
+            </li>
+
+            <li>
+              <a href="package.html" class="navbar-link" data-nav-link
+                >packages</a
+              >
+            </li>
+
+            <li>
+              <a href="gallery.html" class="navbar-link" data-nav-link
+                >gallery</a
+              >
+            </li>
+
+            <li>
+              <a href="contact.html" class="navbar-link" data-nav-link
+                >contact us</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </header>
+    <main>
+      <section class="gallery" id="gallery">
+        <div class="container">
+          <p class="section-subtitle">Photo Gallery</p>
+
+          <h2 class="h2 section-title">Photo's From Travellers</h2>
+
+          <p class="section-text">
+            Explore our gallery to immerse yourself in the beauty and diversity of travel. From stunning landscapes and vibrant cityscapes to captivating cultural moments, each image tells a story and inspires your next adventure.
+          </p>
+
+          <ul class="gallery-list">
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-1.jpg" alt="Gallery image" />
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-2.jpg" alt="Gallery image" />
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-3.jpg" alt="Gallery image" />
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-4.jpg" alt="Gallery image" />
+              </figure>
+            </li>
+
+            <li class="gallery-item">
+              <figure class="gallery-image">
+                <img src="./assests/images/gallery-5.jpg" alt="Gallery image" />
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

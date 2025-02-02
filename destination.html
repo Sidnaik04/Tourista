@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=], initial-scale=1.0" />
+    <title>Destination</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+  - custom css link
+-->
+    <link rel="stylesheet" href="./assests/style.css" />
+
+    <!-- 
+  - google font link
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar" data-navbar style="background-color: #212121">
+        <div class="navbar-top">
+
+          <button
+            class="nav-close-btn"
+            aria-label="Close Menu"
+            data-nav-close-btn
+          >
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+          <li>
+            <a href="index.html" class="navbar-link" data-nav-link>home</a>
+          </li>
+
+          <li>
+            <a href="destination.html" class="navbar-link" data-nav-link
+              >destination</a
+            >
+          </li>
+
+          <li>
+            <a href="package.html" class="navbar-link" data-nav-link
+              >packages</a
+            >
+          </li>
+
+          <li>
+            <a href="gallery.html" class="navbar-link" data-nav-link>gallery</a>
+          </li>
+
+          <li>
+            <a href="contact.html" class="navbar-link" data-nav-link
+              >contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="popular" id="destination">
+        <div class="container">
+          <p class="section-subtitle">Uncover place</p>
+
+          <h2 class="h2 section-title">Popular destination</h2>
+
+          <p class="section-text">
+            Discover the world’s most popular destinations, where vibrant cultures, breathtaking landscapes, and unforgettable experiences await. From iconic landmarks to hidden gems, each location offers unique adventures that inspire wanderlust and create lasting memories.
+          </p>
+
+          <ul class="popular-list">
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assests/images/popular-1.jpg"
+                    alt="Hampi, India"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">India</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Hampi</a>
+                  </h3>
+
+                  <p class="card-text">
+                    The UNESCO World Heritage Site, captivates with its ancient ruins and stunning landscapes.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assests/images/popular-2.jpg"
+                    alt="Burj khalifa, dubai"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Dubai</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">Burj khalifa</a>
+                  </h3>
+
+                  <p class="card-text">
+                    It is a stunning symbol of modern architecture and innovation.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li>
+              <div class="popular-card">
+                <figure class="card-img">
+                  <img
+                    src="./assests/images/popular-3.jpg"
+                    alt="Kyoto temple, japan"
+                    loading="lazy"
+                  />
+                </figure>
+
+                <div class="card-content">
+                  <div class="card-rating">
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                    <ion-icon name="star"></ion-icon>
+                  </div>
+
+                  <p class="card-subtitle">
+                    <a href="#">Italy</a>
+                  </p>
+
+                  <h3 class="h3 card-title">
+                    <a href="#">San Miguel</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Charming comune known for its picturesque landscapes and historical significance. 
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+          <button class="btn btn-primary">More destintion</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

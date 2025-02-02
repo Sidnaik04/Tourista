@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourista - Travel agancy</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assests/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="overlay" data-overlay></div>
+  
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+  
+          <ul class="navbar-list">
+            <li>
+              <a href="index.html" class="navbar-link" data-nav-link>home</a>
+            </li>
+            <li>
+              <a href="destination.html" class="navbar-link" data-nav-link>destination</a>
+            </li>
+            <li>
+              <a href="package.html" class="navbar-link" data-nav-link>packages</a>
+            </li>
+            <li>
+              <a href="gallery.html" class="navbar-link" data-nav-link>gallery</a>
+            </li>
+            <li>
+              <a href="contact.html" class="navbar-link" data-nav-link>contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero" id="home">
+          <div class="container">
+            <h2 class="h1 hero-title">Journey to explore world</h2>
+
+            <p class="hero-text">
+              Unleash your wanderlust with Tourista! From stunning beaches to vibrant cityscapes, we connect you to unforgettable experiences and hidden gems. Let us guide you on a journey filled with adventure, culture, and memories that last a lifetime. Your next great escape starts here!
+            </p>
+
+            <div class="btn-group">
+              <button class="btn btn-primary">Learn More</button>
+
+              <button class="btn btn-secondary">Book Now</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #TOUR SEARCH
+      -->
+
+        <section class="tour-search">
+          <div class="container">
+            <form action="" class="tour-search-form">
+              <div class="input-wrapper">
+                <label for="destination" class="input-label">Search Destination</label>
+
+                <input
+                  type="text"
+                  name="destination"
+                  id="destination"
+                  required
+                  placeholder="Enter Destination"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="people" class="input-label">People Number</label>
+
+                <input
+                  type="number"
+                  name="people"
+                  id="people"
+                  required
+                  placeholder="No.of People"
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkin" class="input-label">Checkin Date</label>
+
+                <input
+                  type="date"
+                  name="checkin"
+                  id="checkin"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <div class="input-wrapper">
+                <label for="checkout" class="input-label">Checkout Date</label>
+
+                <input
+                  type="date"
+                  name="checkout"
+                  id="checkout"
+                  required
+                  class="input-field"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-secondary">
+                Inquire now
+              </button>
+            </form>
+          </div>
+        </section>
+
+
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+
+    <footer>
+      <div class="footer-bottom">
+        <div class="container">
+  
+          <p class="copyright">
+            &copy; 2025 <a href="">Sidnaik04</a>. All rights reserved
+          </p>
+  
+          <ul class="footer-bottom-list">
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">Term & Condition</a>
+            </li>
+  
+            <li>
+              <a href="#" class="footer-bottom-link">FAQ</a>
+            </li>
+  
+          </ul>
+  
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+    <!-- 
+    - custom js link
+  -->
+  <script src="./assests/js/script.js"></script>
+
+  <!-- 
+  - ionicon link
+-->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
