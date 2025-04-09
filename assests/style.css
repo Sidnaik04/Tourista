@@ -764,6 +764,64 @@ address {
   color: var(--white);
 }
 
+.contact-form-section {
+  background: var(--cultured);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact-form .input-wrapper {
+  margin-bottom: 15px;
+}
+
+.contact-form .input-label {
+  font-size: var(--fs-4);
+  color: var(--gunmetal);
+  margin-bottom: 8px;
+}
+
+.contact-form .input-field {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--spanish-gray);
+  border-radius: 8px;
+  font-size: var(--fs-5);
+}
+
+.contact-form .btn {
+  background: var(--bright-navy-blue);
+  color: var(--white);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid var(--spanish-gray);
+  border-radius: 8px;
+  font-size: var(--fs-5);
+  background: var(--white);
+  cursor: pointer;
+}
+
+.contact-form select:focus {
+  border-color: var(--bright-navy-blue);
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
 .footer-bottom {
   --gunmetal: hsl(205, 36%, 17%);
   background: var(--gunmetal);

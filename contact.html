@@ -76,23 +76,46 @@
         </nav>
       </header>
     <main/>
-    <section class="cta" id="contact">
-        <div class="container">
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
-
-            <h2 class="h2 section-title">
-              Ready For Unforgatable Travel. Remember Us!
-            </h2>
-
-            <p class="section-text">
-              We’d love to hear from you! Whether you have questions, feedback, or need assistance with your travel plans, our team is here to help. Reach out to us via email, phone, or our online form, and we’ll get back to you as soon as possible. Your journey starts with us!
-            </p>
+    <section class="contact-form-section">
+      <div class="container">
+        <p class="section-subtitle">Get in Touch</p>
+        <h2 class="h2 section-title">Send Us a Message</h2>
+    
+        <form id="contactForm" class="contact-form">
+          <div class="input-wrapper">
+            <label for="name" class="input-label">Full Name</label>
+            <input type="text" id="name" name="name" class="input-field" placeholder="Enter your name" required>
+            <p class="error-message" id="nameError"></p>
           </div>
-
-          <button class="btn btn-secondary">Contact Us !</button>
-        </div>
-      </section>
+    
+          <div class="input-wrapper">
+            <label for="email" class="input-label">Email Address</label>
+            <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required>
+            <p class="error-message" id="emailError"></p>
+          </div>
+    
+          <div class="input-wrapper">
+            <label for="phone" class="input-label">Phone Number</label>
+            <input type="tel" id="phone" name="phone" class="input-field" placeholder="Enter your phone number">
+            <p class="error-message" id="phoneError"></p>
+          </div>
+    
+          <div class="input-wrapper">
+            <label for="package" class="input-label">Select a Package</label>
+            <select id="package" name="package" class="input-field" required>
+              <option value="" disabled selected>Choose a package</option>
+              <option value="package1">Package 1: $750 / per person</option>
+              <option value="package2">Package 2: $520 / per person</option>
+              <option value="package3">Package 3: $660 / per person</option>
+            </select>
+            <p class="error-message" id="packageError"></p>
+          </div>
+          
+    
+          <button type="submit" class="btn btn-secondary">Submit</button>
+        </form>
+      </div>
+    </section>    
       <section>
         <div class="footer-top">
             <div class="container">
@@ -178,3 +201,8 @@
   </footer>
 </body>
 </html>
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="./assests/script.js"></script>
