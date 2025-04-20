@@ -27,9 +27,10 @@
   </head>
   <body>
     <header>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
       <nav class="navbar" data-navbar style="background-color: #212121">
         <div class="navbar-top">
-
           <button
             class="nav-close-btn"
             aria-label="Close Menu"
@@ -76,7 +77,11 @@
           <h2 class="h2 section-title">Popular destination</h2>
 
           <p class="section-text">
-            Discover the world’s most popular destinations, where vibrant cultures, breathtaking landscapes, and unforgettable experiences await. From iconic landmarks to hidden gems, each location offers unique adventures that inspire wanderlust and create lasting memories.
+            Discover the world’s most popular destinations, where vibrant
+            cultures, breathtaking landscapes, and unforgettable experiences
+            await. From iconic landmarks to hidden gems, each location offers
+            unique adventures that inspire wanderlust and create lasting
+            memories.
           </p>
 
           <ul class="popular-list">
@@ -108,7 +113,8 @@
                   </h3>
 
                   <p class="card-text">
-                    The UNESCO World Heritage Site, captivates with its ancient ruins and stunning landscapes.
+                    The UNESCO World Heritage Site, captivates with its ancient
+                    ruins and stunning landscapes.
                   </p>
                 </div>
               </div>
@@ -142,7 +148,8 @@
                   </h3>
 
                   <p class="card-text">
-                    It is a stunning symbol of modern architecture and innovation.
+                    It is a stunning symbol of modern architecture and
+                    innovation.
                   </p>
                 </div>
               </div>
@@ -176,7 +183,8 @@
                   </h3>
 
                   <p class="card-text">
-                    Charming comune known for its picturesque landscapes and historical significance. 
+                    Charming comune known for its picturesque landscapes and
+                    historical significance.
                   </p>
                 </div>
               </div>
@@ -188,4 +196,35 @@
       </section>
     </main>
   </body>
+
+  <script>
+    $(document).ready(function () {
+      function revealOnScroll() {
+        $('.popular-card').each(function () {
+          var cardTop = $(this).offset().top;
+          var scrollBottom = $(window).scrollTop() + $(window).height();
+  
+          if (cardTop < scrollBottom - 50) {
+            $(this).addClass('visible');
+          }
+        });
+      }
+
+      revealOnScroll();
+  
+      $(window).on('scroll', function () {
+        revealOnScroll();
+      });
+  
+      $('.popular-card').hover(
+        function () {
+          $(this).addClass('hovered');
+        },
+        function () {
+          $(this).removeClass('hovered');
+        }
+      );
+    });
+  </script>
+  
 </html>
