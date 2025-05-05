@@ -66,175 +66,53 @@
           </ul>
         </nav>
       </header>
-    <main/>
-    <section class="contact-form-section">
-      <div class="container">
-        <p class="section-subtitle">Get in Touch</p>
-        <h2 class="h2 section-title">Send Us a Message</h2>
-    
-        <form id="contactForm" class="contact-form">
-          <div class="input-wrapper">
-            <label for="name" class="input-label">Full Name</label>
-            <input type="text" id="name" name="name" class="input-field" placeholder="Enter your name" required>
-            <p class="error-message" id="nameError"></p>
-          </div>
-    
-          <div class="input-wrapper">
-            <label for="email" class="input-label">Email Address</label>
-            <input type="email" id="email" name="email" class="input-field" placeholder="Enter your email" required>
-            <p class="error-message" id="emailError"></p>
-          </div>
-    
-          <div class="input-wrapper">
-            <label for="phone" class="input-label">Phone Number</label>
-            <input type="tel" id="phone" name="phone" class="input-field" placeholder="Enter your phone number">
-            <p class="error-message" id="phoneError"></p>
-          </div>
-    
-          <div class="input-wrapper">
-            <label for="package" class="input-label">Select a Package</label>
-            <select id="package" name="package" class="input-field" required>
-              <option value="" disabled selected>Choose a package</option>
-              <option value="package1">Package 1: $750 / per person</option>
-              <option value="package2">Package 2: $520 / per person</option>
-              <option value="package3">Package 3: $660 / per person</option>
-            </select>
-            <p class="error-message" id="packageError"></p>
-          </div>
-          
-    
-          <button type="submit" class="btn btn-secondary">Submit</button>
-        </form>
-      </div>
-    </section>    
-      <section>
-        <div class="footer-top">
+    <main>
+        <section class="contact-section">
             <div class="container">
+                <p class="section-subtitle">Get in Touch</p>
+                <h2 class="h2 section-title">Contact Information</h2>
 
-    
-              <div class="footer-contact">
-                <h4 class="contact-title">Contact Us</h4>
-    
-                <p class="contact-text">Feel free to contact and reach us !!</p>
-    
-                <ul>
-                  <li class="contact-item">
-                    <ion-icon name="call-outline"></ion-icon>
-    
-                    <a href="#" class="contact-link"
-                      >+91 8600980846</a
-                    >
-                  </li>
-    
-                  <li class="contact-item">
-                    <ion-icon name="mail-outline"></ion-icon>
-    
-                    <a href="#" class="contact-link"
-                      >info.tourista.com</a
-                    >
-                  </li>
-    
-                  <li class="contact-item">
-                    <ion-icon name="location-outline"></ion-icon>
-    
-                    <address>Curchorem Goa, India</address>
-                  </li>
-                </ul>
-              </div>
-    
-              <div class="footer-form">
-                <p class="form-text">
-                  Subscribe our newsletter for more update & news !!
-                </p>
-    
-                <form action="" class="form-wrapper">
-                  <input
-                    type="email"
-                    name="email"
-                    class="input-field"
-                    placeholder="Enter Your Email"
-                    required
-                  />
-    
-                  <button type="submit" class="btn btn-secondary">Subscribe</button>
-                </form>
-              </div>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <h3>Phone</h3>
+                        <p>+91 8600980846</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <h3>Email</h3>
+                        <p>info.tourista.com</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <ion-icon name="location-outline"></ion-icon>
+                        <h3>Address</h3>
+                        <p>Curchorem Goa, India</p>
+                    </div>
+                </div>
+
+                <div class="book-tour-section">
+                    <h3>Ready to Book Your Tour?</h3>
+                    <p>Click below to start planning your perfect trip!</p>
+                    <a href="tour.php" class="btn btn-secondary">Book Your Tour</a>
+                </div>
             </div>
-          </div>
-      </section>
-  </main>
-  <footer>
-    <div class="footer-bottom">
-      <div class="container">
-
-        <p class="copyright">
-          &copy; 2025 <a href="">Sidnaik04</a>. All rights reserved
-        </p>
-
-        <ul class="footer-bottom-list">
-
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">Term & Condition</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-bottom-link">FAQ</a>
-          </li>
-
-        </ul>
-
-      </div>
-    </div>
-  </footer>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="copyright">
+                    &copy; 2025 <a href="">Sidnaik04</a>. All rights reserved
+                </p>
+                <ul class="footer-bottom-list">
+                    <li><a href="#" class="footer-bottom-link">Privacy Policy</a></li>
+                    <li><a href="#" class="footer-bottom-link">Term & Condition</a></li>
+                    <li><a href="#" class="footer-bottom-link">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
-
-<script>
-  $(document).ready(function () {
-    $("#contactForm").submit(function (event) {
-      event.preventDefault();
-  
-      let name = $("#name").val().trim();
-      let email = $("#email").val().trim();
-      let phone = $("#phone").val().trim();
-      let packageSelected = $("#package").val();
-  
-      let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      let phonePattern = /^[0-9]{10,15}$/;
-  
-      if (name.length < 3) {
-        alert("Name must be at least 3 characters.");
-        return;
-      }
-  
-      if (!emailPattern.test(email)) {
-        alert("Enter a valid email address.");
-        return;
-      }
-  
-      if (phone && !phonePattern.test(phone)) {
-        alert("Enter a valid phone number (digits only).");
-        return;
-      }
-  
-      if (!packageSelected) {
-        alert("Please select a package.");
-        return;
-      }
-  
-      console.log({
-        Name: name,
-        Email: email,
-        Phone: phone || "Not provided",
-        Package: packageSelected
-      });
-  
-      alert("Form submitted successfully!");
-      $("#contactForm")[0].reset();
-    });
-  });  
-</script>
